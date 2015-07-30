@@ -1,0 +1,30 @@
+{
+  "name": "substr-ansi",
+  "version": "0.0.0",
+  "description": "Get the real `String#substr`, correctly handling ansi escape codes.",
+  "license": "MIT",
+  "repository": "danilosampaio/substr-ansi",
+  "author": {
+    "name": "Danilo Sampaio",
+    "email": "danilo.sampaio@gmail.com",
+    "url": "github.org/danilosampaio"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "ansi-regex": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
