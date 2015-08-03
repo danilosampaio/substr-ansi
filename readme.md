@@ -1,6 +1,6 @@
 # substr-ansi [![Build Status](https://travis-ci.org/danilosampaio/substr-ansi.svg?branch=master)](https://travis-ci.org/danilosampaio/substr-ansi)
 
-> Get the real `String#substr`, correctly handling ansi escape codes.
+> Get the `String#substr` correctly handling ansi escape codes.
 
 
 ## Install
@@ -17,9 +17,9 @@ var substrAnsi = require('substr-ansi');
 
 console.log(substrAnsi('\u001b[47mHi\u001b[49m', 0, 2));
 //=> Hi
-Note that the ansi code are preserved: `\u001b[47mHi\u001b[49m`
+Note that the ansi code are preserved: \u001b[47mHi\u001b[49m
 
-`String.prototype.substr` results in a broken string:
+'\u001b[47mHi\u001b[49m'.substr(0, 2) results in a broken string:
 //=> \u001b[
 
 
@@ -31,7 +31,7 @@ Complete string: `\u001b[0m\u001b[31m\u001b[47mHello`
 
 ## API
 
-### substrAnsi(input, [options])
+### substrAnsi(str, start[, length])
 
 #### str
 

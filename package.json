@@ -1,7 +1,7 @@
 {
   "name": "substr-ansi",
   "version": "0.0.2",
-  "description": "Get the real `String#substr`, correctly handling ansi escape codes.",
+  "description": "Get the `String#substr` correctly handling ansi escape codes.",
   "license": "MIT",
   "repository": "danilosampaio/substr-ansi",
   "author": {
