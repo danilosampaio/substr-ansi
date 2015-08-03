@@ -19,12 +19,13 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "substr", "ansi"
   ],
   "dependencies": {
     "ansi-regex": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "xo": "^0.5.1"
   }
 }

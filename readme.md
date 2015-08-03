@@ -15,12 +15,17 @@ $ npm install --save substr-ansi
 ```js
 var substrAnsi = require('substr-ansi');
 
-substrAnsi('\u001b[0m\u001b[31m\u001b[47mHi\u001b[49m\u001b[39m\u001b[0m', 0, 2);
+console.log(substrAnsi('\u001b[47mHi\u001b[49m', 0, 2));
 //=> Hi
+Note that the ansi code are preserved: `\u001b[47mHi\u001b[49m`
 
-String.prototype.substr results:
-
+`String.prototype.substr` results in a broken string:
 //=> \u001b[
+
+
+substrAnsi('\u001b[0m\u001b[31m\u001b[47mHello', 0, 5);
+//=> Hello (visible text)
+Complete string: `\u001b[0m\u001b[31m\u001b[47mHello`
 ```
 
 
